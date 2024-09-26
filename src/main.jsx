@@ -3,12 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root/Root";
-import Home from "./components/Home/Home";
 import Jobs from "./components/Jobs";
 import AppliedJobs from "./components/AppliedJobs";
 import Blogs from "./components/Blogs";
 import Statistics from "./components/Statistics";
 import ErrorPage from "./components/ErrorPage";
+import Home from "./components/Home/Home";
 
 const router = createBrowserRouter([
 	{
