@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 	return (
-		<div className="navbar bg-base-100">
+		<div className="navbar bg-base-100 font-manrope">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div
@@ -37,15 +37,17 @@ const Navbar = () => {
 						<NavLink to="/blogs">Blogs</NavLink>
 					</ul>
 				</div>
-				<a className="btn btn-ghost text-xl">daisyUI</a>
+				<a className="btn btn-ghost text-3xl font-manrope font-extrabold">
+					Career<span className="text-[#828DFF]">Hub</span>
+				</a>
 			</div>
-			<div className="navbar-center sm:hidden md:hidden lg:flex">
-				<ul className="menu flex items-center menu-horizontal space-x-2 px-1">
+			<div className="navbar-center hidden lg:flex">
+				<ul className="menu flex items-center menu-horizontal space-x-2 px-1 font-bold">
 					{" "}
 					<NavLink
 						className={({ isActive }) =>
 							isActive
-								? "text-[#3EC629] px-5 py-3 rounded-lg border-2 border-[#3EC629]"
+								? "text-[#828DFF] px-5 py-3 rounded-lg border-2 border-[#828DFF]"
 								: "hover: px-5 hover:py-3 hover:border-2 hover:rounded-lg hover:bg-[#D2D4D7] hover:font-semibold"
 						}
 						to="/"
@@ -55,7 +57,7 @@ const Navbar = () => {
 					<NavLink
 						className={({ isActive }) =>
 							isActive
-								? "px-5 py-3 border-2 border-[#3EC629] text-[#3EC629] rounded-lg"
+								? "px-5 py-3 border-2 border-[#828DFF] text-[#828DFF] rounded-lg"
 								: "hover: px-5 hover:py-3 hover:border-2 hover:rounded-lg hover:bg-[#D2D4D7] hover:font-semibold"
 						}
 						to="/jobs"
@@ -65,7 +67,7 @@ const Navbar = () => {
 					<NavLink
 						className={({ isActive }) =>
 							isActive
-								? "px-5 py-3 border-2 border-[#3EC629] text-[#3EC629] rounded-lg"
+								? "px-5 py-3 border-2 border-[#828DFF] text-[#828DFF] rounded-lg"
 								: "hover: px-5 hover:py-3 hover:border-2 hover:rounded-lg hover:bg-[#D2D4D7] hover:font-semibold"
 						}
 						to="/statistics"
@@ -75,7 +77,7 @@ const Navbar = () => {
 					<NavLink
 						className={({ isActive }) =>
 							isActive
-								? "px-5 py-3 border-2 border-[#3EC629] text-[#3EC629] rounded-lg"
+								? "px-5 py-3 border-2 border-[#828DFF] text-[#828DFF] rounded-lg"
 								: "hover: px-5 hover:py-3 hover:border-2 hover:rounded-lg hover:bg-[#D2D4D7] hover:font-semibold"
 						}
 						to="/applied"
@@ -85,7 +87,7 @@ const Navbar = () => {
 					<NavLink
 						className={({ isActive }) =>
 							isActive
-								? "px-5 py-3 border-2 border-[#3EC629] text-[#3EC629] rounded-lg"
+								? "px-5 py-3 border-2 border-[#828DFF] text-[#828DFF] rounded-lg"
 								: "hover: px-5 hover:py-3 hover:border-2 hover:rounded-lg hover:bg-[#D2D4D7] hover:font-semibold"
 						}
 						to="/blogs"
@@ -95,7 +97,9 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<a className="btn">Button</a>
+				<a className="btn border-none bg-[#828DFF] text-white px-5 font-bold hover:text-slate-700">
+					Apply Now!
+				</a>
 			</div>
 		</div>
 	);
