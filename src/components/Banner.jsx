@@ -11,7 +11,7 @@ const Banner = () => {
 					/>
 				</div>
 				<div className="md:w-[40%] lg:w-[38%]">
-					<h1 className="text-3xl text-center lg:text-left md:text-left lg:text-[80px] font-extrabold lg:leading-[80px] mb-5">
+					<h1 className="text-3xl text-center lg:text-left md:text-left lg:text-[80px] font-extrabold lg:leading-[90px] mb-5">
 						One Step Closer To Your{" "}
 						<span className="text-[#7E90FE]">Dream Job</span>
 					</h1>
